@@ -1,7 +1,8 @@
 [build]
-  command = "npm run build"
+  command = "yarn install && npm run build"
   publish = ".next"
 
 [build.environment]
   NODE_VERSION = "20.11.0"
-  NPM_VERSION = "10.2.4"
+  NODE_ENV = "development"
+  YARN_REGISTRY = "https://registry.npmjs.org/"
