@@ -122,7 +122,7 @@ async function searchGuides(destination: string, braveKey?: string) {
       }
     );
     const data = await res.json();
-    return (data.web?.results || []).slice(0, 4).map((r: any) => ({
+    return (data.web?.results || []).slice(0, 4).map((r: { title: string; url: string; description: string }) => ({
       title: r.title,
       url: r.url,
       snippet: r.description,

@@ -78,7 +78,7 @@ export default function ChatInterface({ onComplete, loading, setLoading }: Props
         });
         const data = await res.json();
         onComplete({ ...parseTravelData(newAnswers), ...data });
-      } catch (e) {
+      } catch {
         setMessages([...newMessages, { role: 'ai', text: '出了点小问题，请刷新重试 😅' }]);
       } finally {
         setLoading(false);
