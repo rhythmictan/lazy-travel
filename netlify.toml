@@ -3,6 +3,6 @@
   publish = ".next"
 
 [build.environment]
-  NODE_VERSION = "20.11.0"
+  NODE_VERSION = "22.14.0"
   NODE_ENV = "development"
   YARN_REGISTRY = "https://registry.npmjs.org/"
